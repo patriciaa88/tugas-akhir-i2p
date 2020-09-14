@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Akhir Patricia</title>
+    <style>
+.topnav {
+    overflow: hidden;
+    background-color: white;
+}
+
+.topnav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 15px 17px;
+    text-decoration:none;
+    font-size: 15px;
+}
+.topnav a:hover {
+    background-color:orange;
+    color:black;
+}
+
+.topnav a.active {
+    background-color:white;
+    color:black;
+}
+body{
+    background-color:white;
+    margin-left: 0;
+}
+.logo{
+  margin-left: 100px;
+  margin-top: 10px;
+}
+/* #bannerimage {
+  width: 100%;
+  background-image: url(https://images.creativemarket.com/0.1.0/ps/2575276/1160/773/m1/fpnw/wm1/364_обл-.jpg?1492765550&s=3ae016b239fc6bcf67c7877790c79658);
+  height: 600px;
+ 
+  background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+} */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  max-height: 500px;
+ position: relative;
+  margin:auto;
+  background-image: url(https://images.creativemarket.com/0.1.0/ps/2575276/1160/773/m1/fpnw/wm1/364_обл-.jpg?1492765550&s=3ae016b239fc6bcf67c7877790c79658) ;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.webelieve {
+  background-color:yellow;
+  /* border-radius: 50%; */
+    /* color: white; */
+    margin: 10px 20px 10px 20px;
+    padding: 15px 7px 15px 7px;
+    /* text-align: center; */
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 14px;
+    cursor: pointer;
+    /* border-radius: 12px;
+    border:none; */
+}
+
+.footer {
+  position:relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:darkslategrey;
+  color: white;
+  text-align: center;
+}
+
+#wrapper{
+    width: 100%;
+    background-color:darkslategray;
+    display: flex;
+}
+
+#left{
+     flex: 1;    
+     background-color:darkslategray;
+}
+
+#center {
+     flex: 3;
+     background-color: darkslategray;
+}
+
+#right{
+    flex: 1;
+    background-color: darkslategrey;
+}
+button {     
+    background-color:black;
+    color: white;
+    margin: 10px 10px 10px 10px;
+    padding: 8px 5px 8px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    border:2px;
+    width: 150px;
+
+}
+
+.button:hover span::after{
+    opacity: 1;
+}
+.buttonLearnMore {
+  background-color:black;
+    color: white;
+    margin: 10px 20px 10px 20px;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 12px;
+    border:none;
+
+
+}
+.isiantengah{
+  text-align: center;
+}
+
+
+    </style>
+</head>
+<body>
+<div class="header">
+  
+  <div class="wrap">
+    <div class="logo">
+      <a href="index.html">
+        <img src="https://wfdbwebsite01.herokuapp.com/images/logo.png" alt> 
+      </a>
+  
+    </div>
+  </div>
+</div>
+    <ul>
+      
+        <div class = 'topnav'>
+            <a class = 'arial' href="index.html">CONTACT</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="#blog">BLOG</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="#contact">HOME</a>
+        </div>
+              <!-- <div class="header">
+                <div id="bannerimage"></div>
+                <div style="background-image: url('https://images.creativemarket.com/0.1.0/ps/2575276/1160/773/m1/fpnw/wm1/364_обл-.jpg?1492765550&s=3ae016b239fc6bcf67c7877790c79658'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;">
+              <img src="https://images.creativemarket.com/0.1.0/ps/2575276/1160/773/m1/fpnw/wm1/364_обл-.jpg?1492765550&s=3ae016b239fc6bcf67c7877790c79658" alt> -->
+     
+      <!-- </div> -->
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="https://images.creativemarket.com/0.1.0/ps/2575276/1160/773/m1/fpnw/wm1/364_обл-.jpg?1492765550&s=3ae016b239fc6bcf67c7877790c79658g" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="https://images.creativemarket.com/0.1.0/ps/2575276/1160/773/m1/fpnw/wm1/364_обл-.jpg?1492765550&s=3ae016b239fc6bcf67c7877790c79658g" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="https://images.creativemarket.com/0.1.0/ps/2575276/1160/773/m1/fpnw/wm1/364_обл-.jpg?1492765550&s=3ae016b239fc6bcf67c7877790c79658" style="width:100%">
+          <div class="text">Caption Three</div>
+        <!-- </div> -->
+        <div class="webelieve">
+        <h1>WE <br> BELIEVE</h1></div>
+        <br>
+        <div class="inqualitydesign">
+          <h1> IN QUALITY <br> DESIGN</h1>
+        </div>
+        </div>
+
+
+           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+ 
+        <div class = isiantengah >
+          <h1>WE CREATE QUALITY DESIGNS</h1>
+          <h4>We Specialize in Web Design / Development and Graphic Design</h4>
+          <img src="images/pic.jpg" alt="">
+        </div>
+        
+        <div class="footer">
+          
+          <body>
+            <div id="wrapper">
+              <div id="left" >
+                <h1>About Us</h1><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br>
+                do eiusmod tempor incididunt ut labore et dolore magna <br>
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br>
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. <br> 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse <br>
+                cillum dolore eu fugiat nulla pariatur. <br> <br>
+                <div class="buttonLearnMore">
+                <button> Learn More </button>
+              </div>
+              
+                <h1>Photo Stream</h1> <br>
+                <img src="https://wfdbwebsite01.herokuapp.com/images/g1.jpg" alt>
+                <img src="https://wfdbwebsite01.herokuapp.com/images/g2.jpg" alt><br>
+                <img src="https://wfdbwebsite01.herokuapp.com/images/g3.jpg" alt>
+                <img src="https://wfdbwebsite01.herokuapp.com/images/g4.jpg" alt><br>
+                <img src="https://wfdbwebsite01.herokuapp.com/images/g5.jpg" alt>
+                <img src="https://wfdbwebsite01.herokuapp.com/images/g6.jpg" alt><br>
+
+               
+
+
+              </div>
+              <div id="center" >
+                <h1>Latest tweets</h1><br>
+              <img src="https://wfdbwebsite01.herokuapp.com/images/tw.png" alt="images/tw.png">
+              <br>
+              Lorem ipsum consectetuer adipiscing elit, seddia <br>
+              web design <br><br>
+              <img src="https://wfdbwebsite01.herokuapp.com/images/tw.png" alt="images/tw.png"><br>
+              Lorem ipsum consectetuer adipiscing elit, seddia <br>
+              web design <br><br>
+              <img src="https://wfdbwebsite01.herokuapp.com/images/tw.png" alt="images/tw.png"><br>
+              Lorem ipsum dolor sit amet, consectetuer <br> 
+              adipiscing elit, sed diam nonummy nibh <br>
+              web design <br><br>
+              <img src="https://wfdbwebsite01.herokuapp.com/images/tw.png" alt="images/tw.png"><br>
+              Lorem ipsum dolor sit amet, consectetuer <br> 
+              adipiscing elit, sed diam nonummy nibh <br>
+              web design <br><br>
+              <img src="https://wfdbwebsite01.herokuapp.com/images/tw.png" alt="images/tw.png"><br>
+              Lorem ipsum consectetuer adipiscing elit, seddia <br>
+              web design <br><br>
+              <div class="social-icons"></div>
+              <h1>Social Connecting</h1>
+              <ul>
+                <li class="facebook">
+                  <a href="#">
+                    <span></span>
+                  </a>
+                </li>
+                <li class="google"></li>
+                <li class="twitter">...</li>
+                <li class="linkedin">...</li>
+                <li class="youtube">...</li>
+               
+
+              </ul>
+             
+            </div>
+            <br>
+            <br>
+              <div id="right" ><h1>Contact Info</h1><br>
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="https://wfdbwebsite01.herokuapp.com/images/address.png" alt>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             
+              Lorem ipsum dolor sit amet,consectetuer adipiscing <br> 
+              elit, sed diam nonummy nibh <br>
+              web design <br> <br>
+              
+
+              <img src="https://wfdbwebsite01.herokuapp.com/images/phone.png" alt>
+              &nbsp;&nbsp;
+              Phone: +1 800 258 2689 <br>
+              &nbsp;&nbsp; +1 800 258 2689 <br><br>
+
+                <img src="https://wfdbwebsite01.herokuapp.com/images/msg.png" alt>
+           
+                    Email: info(at)skokov.com <br> <br> <br>
+                    <h1>Follow Us</h1> <br> <br>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,  <br>
+                    sed diam nonummy nibh euismod
+                    <br>
+                
+              <!-- </div>
+              <div class="navbarbottom">
+                <a href="#home" class="active">Home</a>
+                <a href="#portfolio">Portfolio</a> 
+                <a href="#blog">Blog</a> 
+                <a href="#aboutus">About Us</a> 
+                <a href="#contact">Contact</a> 
+
+                
+              </div>
+              <div class="main">
+              <h1>Bottom Navigation Bar</h1>
+              <p>Some text some text some text.</p>
+              </div>
+                </div>
+                    <h1>Follow Us</h1> <br> <br>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,  <br>
+                    sed diam nonummy nibh euismod
+                    <br> -->
+
+
+             
+            </div>
+         </body>
+        </div>
+
+        <script>
+          var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+        </script>
+
+    </ul>
+    
+</html>
