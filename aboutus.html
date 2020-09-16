@@ -178,7 +178,7 @@ button {
 }
 .buttonLearnMore {
   background-color:black;
-    color: white;
+    color: yellow;
     margin: 10px 20px 10px 20px;
     padding: 10px 5px 10px 5px;
     text-align: center;
@@ -191,24 +191,92 @@ button {
 
 
 }
-.isiantengah{
-  text-align: center;
-}
 
-.isiaboutus{
+#bungkuz{
+    width: 100%;
+    
+    display: flex;
+
+
+
+}
+#isiaboutus{
     flex: 1;   
+    margin-left: 70px;
 }
  
- .isiannya {
-        flex: 3;
+ #isiannya {
+     margin-left: 30px;
+     flex: 3;
+     font-size: small;
+     
 
 }
 
-.isianlainnya {
+#isianlainnya {
     flex: 1;
+    margin-right: 70px;
+    font-size: small;
+    margin-left: 0px;
+
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://p4.wallpaperbetter.com/wallpaper/569/127/686/gray-texture-wallpaper-preview.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  color:yellow;
+  padding: 10px 20px 10px 20px;
+  margin-left: 20px;
+  background-color: black;
+  
+}
+
+.hero-text button {
+  border-bottom: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: yellow;
+  background-color: black; 
+  cursor: pointer;
+margin-left: 2px;
 
 }
 
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.tulisanourskills {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:yellow;
+  padding: 10px 20px 10px 20px;
+  margin-left: 20px;
+  background-color: black;
+  
+}
 
 
     </style>
@@ -228,20 +296,28 @@ button {
     <ul>
       
         <div class = 'topnav'>
-            <a class = 'arial' href="contact.html">CONTACT</a>
+            <a class = 'arial' href="todos.html">TODOS</a>
+            <a href="index.html">CONTACT</a>
             <a href="aboutus.html">ABOUT US</a>
-            <a href="blog.html">BLOG</a>
+            <a href="#blog">BLOG</a>
             <a href="portfolio.html">PORTFOLIO</a>
-            <a href="index.html">HOME</a>
-        
+            <a href="#contact">HOME</a>
         </div>
+
     </ul>
-        <div class="isiaboutus">
+    <div class="hero-image">
+        <div class="hero-text">
+          
+          <h4>About Us</h4>
+        </div>
+      </div>
+    <div id = 'bungkuz'>
+        <div id="isiaboutus">
             <img src="https://wfdbwebsite01.herokuapp.com/images/about-img.jpg" alt> <br>
         
         </div>
         
-        <div class="isiannya">
+        <div id="isiannya">
         <h1>WELCOME TO OUR TEAM</h1>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br>
                 do eiusmod tempor incididunt ut labore et dolore magna <br>
@@ -250,7 +326,8 @@ button {
                 Duis aute irure dolor in reprehenderit in voluptate velit esse <br>
                 cillum dolore eu fugiat nulla pariatur. <br> <br>
             </div>
-            <div class="isianlainnya">
+            <div id="isianlainnya">
+                <h1></h1>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br>
                 do eiusmod tempor incididunt ut labore et dolore magna <br>
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br>
@@ -258,6 +335,9 @@ button {
                 Duis aute irure dolor in reprehenderit in voluptate velit esse <br>
                 cillum dolore eu fugiat nulla pariatur. <br> <br>
             </div>
+    </div>
+    <div class="tulisanourskill"></div>
+    <h4>OUR SKILLS</h4>
     </div>
         
         <div class="footer">
@@ -309,17 +389,7 @@ button {
               Lorem ipsum consectetuer adipiscing elit, seddia <br>
               web design <br><br>
               <div class="social-icons"></div>
-              <h1>Social Connecting</h1>
-              <ul>
-                <li class="facebook">
-                  <a href="#">
-                    <span></span>
-                  </a>
-                </li>
-                <li class="google"></li>
-                <li class="twitter">...</li>
-                <li class="linkedin">...</li>
-                <li class="youtube">...</li>
+            
                
 
               </ul>
